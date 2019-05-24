@@ -24,11 +24,19 @@ img {
   }
 }
 
+@media (max-width: 567px) {
+  .container {
+    max-width: 320px;
+  }
+}
+
 .button {
   border-radius: 10px;
   background-color: #ffd200;
   border: none;
-  padding: 18px 30px;
+  padding: 18px 30px 17px 31px;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .navbar {
