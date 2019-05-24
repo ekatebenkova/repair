@@ -11,6 +11,9 @@
   &__address
     display: flex
     flex-direction: column
+    font-size: 13px
+    font-weight: 400
+    color: $text-color
   &__button
     margin-left: 30px
   &__phone
@@ -29,4 +32,14 @@
       padding: 12px 26px
     &__logo
       width: 90px
-    
+@media (max-width: 567px)
+  .navbar
+    padding: 17px 0
+    &__contacts
+      display: none
+    &__button
+      font-size: 10px
+      padding: 14px 28px 13px 28px
+      border-radius: 5px
+    &__logo
+      width: 91px
