@@ -1,10 +1,11 @@
 .hero
   padding: 50px 0
+  background-color: $background-color
   &-block
     display: flex
   &-text
-    flex-basis: 50%
-    padding-right: 140px
+    flex-basis: 44%
+    padding-right: 100px
     &__title
       font-size: 41px
       font-weight: 600
@@ -14,7 +15,7 @@
       display: inline-block
       font-size: 20px
       font-weight: 600
-      margin-bottom: 70px
+      margin-bottom: 60px
   &-list
     margin: 0
     padding: 0
@@ -33,6 +34,11 @@
       margin-right: 30px
     &__text
       max-width: 300px
+      font-size: 14px
+      font-weight: 400
+      line-height: 24px
+  &-image
+    box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.2) /* Параметры тени */
 @media (max-width: 1200px)
   .hero
     &-block
