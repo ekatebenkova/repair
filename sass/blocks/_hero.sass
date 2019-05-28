@@ -4,25 +4,25 @@
   &-block
     display: flex
   &-text
-    flex-basis: 44%
-    padding-right: 100px
+    flex-basis: 42%
+    padding-right: 101px
     &__title
       font-size: 41px
-      font-weight: 600
       line-height: 55px
-      margin-bottom: 40px
+      margin-bottom: 38px
+      +bold
     &__subtitle
       display: inline-block
       font-size: 20px
-      font-weight: 600
-      margin-bottom: 60px
+      margin-bottom: 64px
+      +bold
   &-list
     margin: 0
     padding: 0
     &__item
       display: flex
       align-items: center
-      margin-bottom: 25px
+      margin-bottom: 24px
     &__image
       width: 40px
       height: 40px
@@ -37,6 +37,7 @@
       font-size: 14px
       font-weight: 400
       line-height: 24px
+      +reg
   &-image
     box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.2) /* Параметры тени */
 @media (max-width: 1200px)
@@ -49,20 +50,26 @@
       padding-right: 0  
 @media (max-width: 768px)
   .hero
-    padding: 23px 0
+    padding: 25px 0
     &-text
       &__title
-        font-size: 23px
-        line-height: 1.3
-        margin-bottom: 11px
+        font-size: 24px
+        line-height: 1.25
+        margin-bottom: 7px
+        +bold
       &__subtitle
         font-size: 16px
-        margin-bottom: 26px
+        margin-bottom: 25px
+        line-height: 1.2
+        padding-left: 3px
+        +bold
     &-list
       &__item
-        margin-bottom: 13px
+        margin-bottom: 16px
       &__text
         font-size: 12px
-        line-height: 1.3
+        line-height: 1.25
       &__image
         margin-right: 15px
+    &-image
+      margin-top: -10px
