@@ -15,6 +15,11 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
@@ -45,7 +50,8 @@ img {
 @media (max-width: 567px) {
   .container {
     max-width: 320px;
-    width: 86%;
+    width: 87%;
+    padding-left: 3px;
   }
 }
 
@@ -66,6 +72,38 @@ img {
 
 .button:focus {
   outline: none;
+}
+
+.button:hover {
+  background-color: #ffdb33;
+}
+
+.section {
+  padding: 55px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+  font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+}
+
+.input {
+  border: 1px solid #dddddd;
+  padding: 24px 26px;
+  font-size: 15px;
+  border-radius: 10px;
+}
+
+.input:hover {
+  border: 1px solid #FFBB3A;
 }
 
 /* Импорт стилей шапки */
@@ -175,8 +213,8 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 42%;
-      flex-basis: 42%;
+  -ms-flex-preferred-size: 52%;
+      flex-basis: 52%;
   padding-right: 101px;
 }
 
@@ -191,7 +229,7 @@ img {
 .hero-text__subtitle {
   display: inline-block;
   font-size: 20px;
-  margin-bottom: 64px;
+  margin-bottom: 66px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
 }
@@ -208,7 +246,15 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
+}
+
+.hero-list__item:first-child {
+  margin-bottom: 27px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__image {
@@ -259,7 +305,7 @@ img {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 25px 0;
+    padding: 25px 0 50px 0;
   }
   .hero-text__title {
     font-size: 24px;
@@ -277,7 +323,10 @@ img {
     font-weight: 700;
   }
   .hero-list__item {
-    margin-bottom: 16px;
+    margin-bottom: 20px;
+  }
+  .hero-list__item:first-child {
+    margin-bottom: 22px;
   }
   .hero-list__text {
     font-size: 12px;
@@ -288,6 +337,146 @@ img {
   }
   .hero-image {
     margin-top: -10px;
+  }
+}
+
+/* Стили для блока offer */
+.offer {
+  background: url("../img/offer/offer-bg.png") no-repeat;
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer:before {
+  content: '';
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+  outline: none;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+.offer__call-back {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 24px;
+  font-size: 15px;
+  margin-bottom: 34px;
+}
+
+.offer__call-back-manager {
+  width: 230px;
+}
+
+.offer__call-back-phone {
+  margin-left: 64px;
+}
+
+.offer__call-back-phone p {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    padding: 30px 0;
+    background: #ffffff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+  .offer__title {
+    font-size: 18px;
+    line-height: 22px;
+    width: 265px;
+    margin-bottom: 18px;
+  }
+  .offer__subtitle {
+    font-size: 14px;
+    margin-bottom: 28px;
+  }
+  .offer__input {
+    font-size: 15px;
+    min-height: 64px;
+    margin-bottom: 4px;
+  }
+  .offer__button {
+    margin-top: 6px;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-top: 16px;
+  }
+  .offer__call-back {
+    font-size: 15px;
+    line-height: 24px;
+    display: block;
+  }
+  .offer__call-back-manager {
+    display: block;
+    margin-bottom: 7px;
+    padding-left: 3px;
+  }
+  .offer__call-back-phone {
+    display: block;
+    margin: 0;
+    padding-left: 3px;
   }
 }
 /*# sourceMappingURL=style.css.map */
