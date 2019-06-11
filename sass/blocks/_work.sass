@@ -1,0 +1,40 @@
+.work
+  margin-bottom: 25px
+  &-block
+    display: flex
+    justify-content: space-between
+    height: 405px
+    &__work
+      background: $work-card
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      &-image
+        width: 370px
+        height: 270px
+      &-text
+        width: 290px
+        font-size: 16px
+        line-height: 23px
+        margin-left: 25px
+@media (max-width: 768px)
+  .work
+    margin: 0
+    display: flex
+    &-block
+      flex-direction: column
+      height: 100%
+      &__work
+        margin-bottom: 32px
+        height: 300px
+        &-image
+          width: 275px
+          height: 193px
+        &-text
+          font-size: 12px
+          line-height: 17.05px
+          width: 220px
+          margin-left: 19px
+          margin-top: 20px
+          & p
+            margin: 0

@@ -3,13 +3,36 @@
   background-size: 50%
   &__title
     margin: auto
-    margin-bottom: 100px
+    margin-bottom: 90px
+    padding-top: 35px
+    max-width: 800px
+    font-size: 30px
   &__arrows
     max-width: 120px
     margin: auto
     margin-top: 68px
     display: flex
     justify-content: space-between
+    padding-bottom: 45px
 .slider
   &__image
     margin: auto
+@media (max-width: 768px)
+  .portfolio
+    padding: 30px 0
+    background: $secondary
+    background-size: 100%
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      margin: 0
+      margin-bottom: 41px
+      padding: 0
+    &__arrows
+      margin-top: 46px
+      margin-bottom: 10px
+      padding: 0
+  .slider
+    &__image
+      width: 246px
+      height: 186px

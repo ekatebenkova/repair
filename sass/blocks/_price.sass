@@ -1,12 +1,16 @@
 .price
   &__title
     margin: auto
-    margin-bottom: 58px
+    margin-bottom: 47px
+    padding-top: 35px
+    max-width: 520px
+    font-size: 30px
   &__subtitle
-    margin-bottom: 59px
+    margin-bottom: 60px
     text-align: center
+    font-size: 20px
   &__card
-    margin-bottom: 30px
+    margin-bottom: 35px
 .card
   text-align: center
   border: 1px solid $border-card
@@ -17,8 +21,10 @@
       opacity: 1
   &__text
     padding: 40px
+    margin-top: -3px
   &__title
     margin-top: 0
+    font-size: 18px
   &__image
     position: relative
     &::before
@@ -40,6 +46,7 @@
     color: $text-color
     font-size: 16px
     position: relative
+    margin-top: 5px
     &:hover
       &:after
         height: 12px
@@ -59,3 +66,29 @@
     display: flex
     justify-content: space-between
     flex-wrap: wrap
+@media (max-width: 768px)
+  .price
+    padding-bottom: 12px
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      margin-bottom: 27px
+      padding: 0
+      padding-top: 15px
+    &__subtitle
+      font-size: 14px
+      line-height: 1
+      margin-bottom: 61px
+    &__card
+      margin-bottom: 30px
+  .card
+    &__title
+      font-size: 14px
+      margin-bottom: 12px
+    &__image
+      margin-bottom: 30px
+    &__text
+      padding: 0
+      margin-bottom: 33px
+    &__link
+      margin: 0

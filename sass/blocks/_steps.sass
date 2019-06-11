@@ -22,29 +22,52 @@
     align-items: center
     margin: auto
     border-radius: 50%
-    margin-bottom: 30px
+    margin-bottom: 26px
   &__text
     font-size: 14px
     max-width: 160px
     margin: auto
+    line-height: 20px
   &s
     &__title
       margin: auto
-      margin-bottom: 59px
+      margin-bottom: 50px
+      font-size: 30px
+      max-width: 660px
+      margin-top: 10px
     &__subtitle
       text-align: center
-      margin-bottom: 58px
+      margin-bottom: 69px
+      font-size: 20px
     &-block
       display: flex
       flex-wrap: wrap
 @media (max-width: 768px)
   .step
     margin-bottom: 30px
+    &__image
+      margin-bottom: 28px
+      &-sub
+        margin-bottom: 18px
+        &__image
+          margin-bottom: 25px
+    &__text
+      font-size: 12px
+      line-height: 16px
     &:after
       display: none
     &s
+      padding: 0
+      padding-bottom: 45px
       &-block
         flex-direction: column
+      &__title
+        font-size: 18px
+        margin-bottom: 26px
+        line-height: 1.2
+      &__subtitle
+        font-size: 14px
+        margin-bottom: 34px
 @media (max-width: 1200px)
   .step
     margin-bottom: 30px

@@ -1,0 +1,44 @@
+.warranty
+  margin-bottom: 90px
+  &__title
+    margin: auto
+    max-width: 650px
+    margin-bottom: 90px
+    text-align: center
+    line-height: 45px
+    font-size: 30px
+  &-block
+    display: flex
+    justify-content: space-around
+    &__contract
+      &__image
+        text-align: center
+        width: 270px
+        height: 360px
+        border: 20px solid $secondary
+        margin-bottom: 40px
+        justify-content: center
+      &__text
+        width: 290px
+        text-align: center
+        font-size: 18px
+        line-height: 24px
+@media (max-width: 768px)
+  .warranty
+    margin-bottom: 46px
+    padding: 0
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      margin-bottom: 49px
+    &-block
+      flex-direction: column
+      margin-bottom: 28px
+      &__contract
+        &__image
+          margin-bottom: 30px
+        &__text
+          font-size: 14px
+          line-height: 1.2
+          +bold
+          margin-bottom: 44px
