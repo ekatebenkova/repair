@@ -5,6 +5,7 @@
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-300.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 @font-face {
@@ -13,6 +14,7 @@
   src: url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.eot?#iefix") format("embedded-opentype"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.woff") format("woff"), url("../fonts/MuseoSansCyrl/MuseoSansCyrl-700.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
+  font-display: auto;
 }
 
 * {
@@ -49,6 +51,23 @@ img {
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  *:hover {
+    background-color: none;
+    border: none;
+    cursor: none;
+  }
+  /* Small Devices, Tablets */
+  .wow {
+    /*CSS transitions*/
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important;
+  }
 }
 
 @media (max-width: 567px) {
@@ -56,6 +75,11 @@ img {
     max-width: 320px;
     width: 87%;
     padding-left: 3px;
+  }
+  *:hover {
+    background-color: none;
+    border: none;
+    cursor: none;
   }
 }
 
@@ -357,7 +381,7 @@ img {
 
 /* Стили для блока offer */
 .offer {
-  background: url("../img/offer/offer-bg.png") no-repeat;
+  background: url("../img/offer/offer-bg.jpg") no-repeat;
   background-position: center right;
   background-size: contain;
   position: relative;
@@ -1031,7 +1055,7 @@ img {
 
 /* Стили для блока brif */
 .brif {
-  background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
+  background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
   background-position: left center, center right;
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
@@ -1190,7 +1214,7 @@ img {
 
 @media (max-width: 768px) {
   .brif {
-    background-image: url("../img/brif/brif-color-bg.png"), url("../img/brif/brif-bg.jpg");
+    background-image: url("../img/brif/brif-color-bg.jpg"), url("../img/brif/brif-bg.jpg");
     background-position: top center, center bottom;
     background-size: 100% 50%, cover;
     background-repeat: repeat-x, no-repeat;
