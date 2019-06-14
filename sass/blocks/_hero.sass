@@ -3,6 +3,7 @@
   background-color: $secondary
   &-block
     display: flex
+    -ms-flex-direction: row
   &-text
     flex-basis: 52%
     padding-right: 101px
@@ -44,6 +45,7 @@
       +reg
   &-image
     box-shadow: 10px 10px 15px 0 rgba(0,0,0,0.2) /* Параметры тени */
+    width: fit-content
 @media (max-width: 1200px)
   .hero
     &-block

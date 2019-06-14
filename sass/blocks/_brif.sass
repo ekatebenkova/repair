@@ -81,6 +81,10 @@
 
 @media (max-width: 1200px)
   .brif
+    background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+    background-position: left center, center right
+    background-size: 50%, cover
+    background-repeat: repeat-y, no-repeat
     &__form
       padding-left: 30px
   .interview
@@ -128,12 +132,87 @@
     &__title
       font-size: 18px
       line-height: 1.2
+      margin: auto
+      margin-top: 18px
       margin-bottom: 15px
-      width: 220px
+      width: 500px
+      text-align: center
     &__subtitle
       font-size: 14px
+      margin: auto
+      margin-bottom: 39px
+      width: 500px
+      text-align: center
+    &-list
+      margin-bottom: 0
+      &__text
+        font-size: 14px
+        max-width: 500px
+        line-height: 1.2
+      &__counter
+        margin-right: 8px
+        width: 35px
+        height: 35px
+      &__item
+        margin-bottom: 27px
+        &:nth-child(2)
+          margin-bottom: 20px
+        &:nth-child(3)
+          margin-bottom: 27px
+        &:nth-child(4)
+          padding-bottom: 65px
+          margin: 0
+  .form  
+    margin: 0
+    &__title
+      font-size: 17.5px
+      line-height: 25.35px
+      margin-bottom: 20px 
+    &__subtitle
+      font-size: 14px
+      line-height: 26.88px
+    &__description
+      max-width: 140px
+      font-size: 14px
+      line-height: 24px
+      margin: 0 auto
+      margin-bottom: 30px
+@media (max-width: 567px)
+  .brif
+    background-image: url('../img/brif/brif-color-bg.jpg'), url('../img/brif/brif-bg.jpg')
+    background-position: top center, center bottom
+    background-size: 100% 47%, cover
+    background-repeat: repeat-x, no-repeat
+    padding: 0
+    &-block
+      flex-direction: column
+      padding-top: 25px
+    &__form
+      padding: 0
+      padding-top: 55px
+    &__input
+      margin-bottom: 8px
+    &__button
+      margin-top: 0
+      font-size: 14px
+      line-height: 18px
+      margin-bottom: 25px
+  .interview
+    padding: 0
+    margin: 0
+    &__title
+      font-size: 18px
+      line-height: 1.2
+      margin-left: 0
+      margin-bottom: 15px
+      width: 220px
+      text-align: start
+    &__subtitle
+      font-size: 14px
+      margin-left: 0
       margin-bottom: 39px
       width: 175px
+      text-align: start
     &-list
       margin-bottom: 0
       &__text
